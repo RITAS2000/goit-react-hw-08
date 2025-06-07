@@ -5,7 +5,7 @@ import { AiFillPhone } from 'react-icons/ai';
 import { GoPersonFill } from 'react-icons/go';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from '../../redux/contacts/selectors';
-import { addContact } from '../../redux/contacts/operation';
+import { addContact } from '../../redux/contacts/operations';
 
 const initialValues = {
   name: '',

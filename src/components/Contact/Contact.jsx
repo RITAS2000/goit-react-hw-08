@@ -2,7 +2,7 @@ import css from './Contact.module.css';
 import { GoPersonFill } from 'react-icons/go';
 import { AiFillPhone } from 'react-icons/ai';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contacts/operation';
+import { deleteContact } from '../../redux/contacts/operations';
 
 export default function Contact({ id, name, number }) {
   const dispatch = useDispatch();
