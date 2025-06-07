@@ -1,8 +1,8 @@
 import css from './Contact.module.css';
-import { IoMdPerson } from 'react-icons/io';
+import { GoPersonFill } from 'react-icons/go';
 import { AiFillPhone } from 'react-icons/ai';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contactsOps';
+import { deleteContact } from '../../redux/contacts/operation';
 
 export default function Contact({ id, name, number }) {
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ export default function Contact({ id, name, number }) {
         <div className={css.container}>
           <div className={css.textContainer}>
             <div className={css.iconAndText}>
-              <IoMdPerson className={css.icon} />{' '}
+              <GoPersonFill className={css.icon} />{' '}
               <p className={css.text}>{name}</p>
             </div>
             <div className={css.iconAndText}>

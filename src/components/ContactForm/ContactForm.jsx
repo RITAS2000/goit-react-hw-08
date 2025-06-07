@@ -2,10 +2,10 @@ import css from './ContactForm.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { AiFillPhone } from 'react-icons/ai';
-import { IoMdPerson } from 'react-icons/io';
+import { GoPersonFill } from 'react-icons/go';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from '../../redux/contactsSlice.js';
-import { addContact } from '../../redux/contactsOps';
+import { selectContacts } from '../../redux/contacts/selectors';
+import { addContact } from '../../redux/contacts/operation';
 
 const initialValues = {
   name: '',
@@ -67,7 +67,7 @@ export default function ContactForm() {
       <Form className={css.container}>
         <label className={css.label}>
           Name
-          <IoMdPerson className={css.icon} />
+          <GoPersonFill className={css.icon} />
           <Field className={css.input} type="text" name="name" />
           <ErrorMessage
             className={css.spunstyle}
