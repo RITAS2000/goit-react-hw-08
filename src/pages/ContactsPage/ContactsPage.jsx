@@ -10,6 +10,7 @@ import {
   selectIsLoading,
   selectError,
 } from '../../redux/contacts/selectors.js';
+import Title from '../../components/Title/Title.jsx';
 
 export default function Phonebook() {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ export default function Phonebook() {
     <div>
       {loading && <Loader />}
       {error && <Error />}
+      <Title>Phonebook</Title>
       <ContactForm />
       <SearchBox />
       <ContactList />

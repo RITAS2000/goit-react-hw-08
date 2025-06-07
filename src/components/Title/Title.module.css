@@ -1,0 +1,10 @@
+.title {
+    display: block;
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #14532D;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

@@ -1,8 +1,9 @@
+import Title from '../Title/Title';
 import css from './Home.module.css';
 export default function Home() {
   return (
     <div className={css.container}>
-      <h1 className={css.title}>Welcome to the Phonebook app!</h1>
+      <Title>Welcome to the Phonebook app!</Title>
       <p className={css.text}>
         This is a reliable and secure application for storing your personal and
         professional contacts. With Phonebook, you can easily add, delete, or

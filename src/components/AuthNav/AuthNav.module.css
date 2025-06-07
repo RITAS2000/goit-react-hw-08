@@ -8,3 +8,7 @@
     font-size: 22px;
     font-weight: 500;
 }
+.isActive {
+    color: #14532D;
+    font-weight: bold;
+ }
