@@ -31,7 +31,6 @@ export default function App() {
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* <Route path="/register" element={<RegisterPage />} /> */}
             <Route
               path="/register"
               element={
